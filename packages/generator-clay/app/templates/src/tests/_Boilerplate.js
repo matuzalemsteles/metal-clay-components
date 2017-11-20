@@ -3,16 +3,15 @@ import <%= componentName %> from '../<%= componentName %>';
 let component;
 
 describe('<%= componentName %>', function() {
-  afterEach(() => {
-    if (component) {
-      component.dispose();
-    }
-  });
+    afterEach(() => {
+        if (component) {
+          component.dispose();
+        }
+    });
 
-  it('should generate the default markup', () => {
-    component = new <%= componentName %>();
+    it('should generate the default markup', () => {
+        component = new <%= componentName %>();
 
-    expect(component).toMatchSnapshot();
-  });
-
+        expect(component).toMatchSnapshot();
+    });
 });

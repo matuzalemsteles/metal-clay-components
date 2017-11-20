@@ -17,15 +17,14 @@ class <%= componentName %> extends Component {
  * @type {!Object}
  */
 <%= componentName %>.STATE = {
-  /**
-   * Id to be applied to the element.
-   * @instance
-   * @memberof <%= componentName %>
-   * @type {?string|undefined}
-   * @default undefined
-   */
-  id: Config.string(),
-
+    /**
+    * Id to be applied to the element.
+    * @instance
+    * @memberof <%= componentName %>
+    * @type {?string|undefined}
+    * @default undefined
+    */
+    id: Config.string(),
 };
 
 defineWebComponent('<%= repoName %>', <%= componentName %>);
